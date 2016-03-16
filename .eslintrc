@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,  // Tells ESLint our module is running inside a Node.js env
+    "mocha": true
+  },
+  "extends": "airbnb/base",
+  "rules": {
+    // disable requiring trailing commas because it might be nice to revert to
+    // being JSON at some point, and I don't want to make big changes now.
+    "comma-dangle": 0,
+    "no-console": 0,
+    "no-trailing-spaces": [2, { "skipBlankLines": true }]
+  }
+}
