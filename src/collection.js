@@ -53,7 +53,6 @@ class Collection {
   }
   destroy() {
     // Destroy the whole collection
-    console.log(0);
     this._data = [];
     if (this._db._autoSave) {
       this._db.save(this, true);
